@@ -3,21 +3,15 @@ A simple RESTful API for managing books using Node.js, Express, and MongoDB.
 Perfect for learning backend development through hands-on CRUD operations.
 
 🚀 Features
+
 📖 Create, Read, Update, Delete (CRUD) operations for books
-
 🌐 RESTful API design principles
-
 🗃️ MongoDB (local or Atlas) integration using Mongoose
-
 ⚙️ Configurable via .env file
-
 🧪 Test endpoints with Postman or PowerShell
-
 📋 Requirements
 📦 Node.js v18 or higher
-
 🗄️ MongoDB (local or MongoDB Atlas)
-
 🔬 Postman or PowerShell for testing
 
 ⚙️ Setup Instructions
@@ -106,9 +100,7 @@ Mongoose – ODM for MongoDB
 dotenv – Environment configuration
 
 📁 Project Structure
-bash
-Copy
-Edit
+
 book-api/
 │
 ├── models/
@@ -129,8 +121,7 @@ book-api/
 ✅ For local development, you can use:
 
 env
-Copy
-Edit
+
 MONGODB_URI=mongodb://localhost:27017/bookdb
 👨‍💻 Author
 Shreyan Panda
