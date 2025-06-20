@@ -28,26 +28,29 @@ npm install
 3. 🛠️ Configure Environment Variables
 Create a .env file in the root directory and add:
 
-env
+```env
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
 PORT=3000
+```
 ⚠️ Replace <username>, <password>, <cluster>, and <database> with your MongoDB Atlas credentials.
 
 For local MongoDB, use:
 
-env
-Copy
-Edit
+```env
 MONGODB_URI=mongodb://localhost:27017/bookdb
+```
 4. ▶️ Start the Server
-bash
-Copy
-Edit
+   
+```bash
 npm start
+```
 The API will be accessible at:
+```
 🔗 http://localhost:3000
+```
 
 📡 API Endpoints
+
 Method	Endpoint	Description
 POST	/api/books	Create a new book
 GET	/api/books	Get all books
@@ -57,9 +60,8 @@ DELETE	/api/books/:id	Delete a book by ID
 
 🧪 PowerShell Testing Examples
 ✅ Create a Book
-powershell
-Copy
-Edit
+```powershell
+
 $book = @{
     title = "1984";
     author = "George Orwell";
@@ -67,46 +69,41 @@ $book = @{
 } | ConvertTo-Json
 
 Invoke-RestMethod -Uri "http://localhost:3000/api/books" -Method Post -Body $book -ContentType "application/json"
+```
 📖 Get All Books
-powershell
-Copy
-Edit
+```powershell
 Invoke-RestMethod -Uri "http://localhost:3000/api/books" -Method Get
+```
 📗 Get a Book by ID
-powershell
-Copy
-Edit
+```powershell
 $id = "REPLACE_WITH_BOOK_ID"
 Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Get
+```
 ✏️ Update a Book
-powershell
-Copy
-Edit
+```powershell
+
 $id = "REPLACE_WITH_BOOK_ID"
 $update = @{ publishedYear = 2024 } | ConvertTo-Json
 
 Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Put -Body $update -ContentType "application/json"
+```
 ❌ Delete a Book
-powershell
-Copy
-Edit
+```powershell
+
 $id = "REPLACE_WITH_BOOK_ID"
 Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Delete
-🧰 Technologies Used
+```
+🧰 Technologies Used:
+
 Node.js – JavaScript runtime
-
 Express.js – Lightweight web framework
-
 MongoDB – NoSQL database
-
 Mongoose – ODM for MongoDB
-
 dotenv – Load environment variables from .env
 
 📁 Project Structure
-bash
-Copy
-Edit
+```bash
+
 book-api/
 │
 ├── models/
@@ -119,15 +116,15 @@ book-api/
 ├── server.js             # Entry point of the application
 ├── package.json          # Project metadata & dependencies
 └── README.md             # Project documentation
+```
 🔒 Security Note
 Make sure to add sensitive files to your .gitignore:
 
-bash
-Copy
-Edit
+```bash
 .env
 node_modules/
 Never commit your actual MongoDB credentials to GitHub.
+```
 
 👨‍💻 Author
 Shreyan Panda
