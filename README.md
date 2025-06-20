@@ -138,11 +138,8 @@ See the LICENSE file for more details.
 If you found this project helpful:
 
 Give it a ⭐ on GitHub
-
 Share it with others
-
 Feel free to fork and contribute!
-
 Your feedback, ideas, and pull requests are always welcome. 😊
 
    
