@@ -32,7 +32,7 @@ Create a .env file in the root directory and add:
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
 PORT=3000
 ```
-⚠️ Replace <username>, <password>, <cluster>, and <database> with your MongoDB Atlas credentials.
+⚠️ Replace with your MongoDB Atlas credentials.
 
 For local MongoDB, use:
 
