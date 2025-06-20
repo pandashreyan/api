@@ -94,12 +94,13 @@ $id = "REPLACE_WITH_BOOK_ID"
 Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Delete
 ```
 🧰 Technologies Used:
-
+```
 Node.js – JavaScript runtime
 Express.js – Lightweight web framework
 MongoDB – NoSQL database
 Mongoose – ODM for MongoDB
 dotenv – Load environment variables from .env
+```
 
 📁 Project Structure
 ```bash
