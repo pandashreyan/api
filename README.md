@@ -19,3 +19,5 @@ A RESTful API for managing books using Node.js, Express, and MongoDB
 ```bash
 git clone https://github.com/your-username/book-api.git
 cd book-api
+
+2. Install dependencies:
