@@ -1,22 +1,21 @@
-📚 Book API
-A simple RESTful API for managing books using Node.js, Express, and MongoDB.
-Perfect for learning backend development through hands-on CRUD operations.
+# 📚 Book API
 
-🚀 Features
-📖 Create, Read, Update, Delete (CRUD) operations for books
+A RESTful API for managing books using Node.js, Express, and MongoDB
 
-🌐 RESTful API design principles
+## 🚀 Features
+- CRUD operations for books
+- RESTful API endpoints
+- MongoDB integration with Mongoose
+- Environment configuration
+- PowerShell/Postman test examples
 
-🗃️ MongoDB (local or Atlas) integration using Mongoose
+## 📋 Requirements
+- Node.js v18+
+- MongoDB Atlas account or local MongoDB
+- Postman/PowerShell for testing
 
-⚙️ Configurable via .env file
-
-🧪 Easily test endpoints with Postman or PowerShell
-
-📋 Requirements
-📦 Node.js v18 or higher
-
-🗄️ MongoDB (local or MongoDB Atlas)
-
-🔬 Postman or PowerShell for API testing
-
+## ⚙️ Setup
+1. Clone repository:
+```bash
+git clone https://github.com/your-username/book-api.git
+cd book-api
