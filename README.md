@@ -128,8 +128,7 @@ Never commit your actual MongoDB credentials to GitHub.
 ```
 
 👨‍💻 Author
-Shreyan Panda
-🔗 GitHub: @pandashreyan
+Shreyan Panda              🔗 GitHub: @pandashreyan
 
 📄 License
 This project is licensed under the MIT License.
