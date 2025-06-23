@@ -50,12 +50,13 @@ The API will be accessible at:
 
 📡 API Endpoints
 
-Method	Endpoint	Description
-POST	/api/books	Create a new book
-GET	/api/books	Get all books
-GET	/api/books/:id	Get a book by ID
-PUT	/api/books/:id	Update a book by ID
-DELETE	/api/books/:id	Delete a book by ID
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| POST   | `/api/books`     | Create a new book   |
+| GET    | `/api/books`     | Get all books       |
+| GET    | `/api/books/:id` | Get a book by ID    |
+| PUT    | `/api/books/:id` | Update a book by ID |
+| DELETE | `/api/books/:id` | Delete a book by ID |
 
 🧪 PowerShell Testing Examples
 ✅ Create a Book
@@ -128,15 +129,7 @@ api/
 
 ```
 
-#📡 API Endpoints
 
-| Method | Endpoint         | Description         |
-| ------ | ---------------- | ------------------- |
-| POST   | `/api/books`     | Create a new book   |
-| GET    | `/api/books`     | Get all books       |
-| GET    | `/api/books/:id` | Get a book by ID    |
-| PUT    | `/api/books/:id` | Update a book by ID |
-| DELETE | `/api/books/:id` | Delete a book by ID |
 
 ## Setup and Installation
 1. Clone the repository
