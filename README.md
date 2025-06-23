@@ -108,39 +108,24 @@ Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Delete
 📁 Project Structure
 ```bash
 api/
-├── controllers/
-│   └── bookController.js    
-# Controller functions for 
-book operations
-├── models/
-│   └── Book.js              
-# Mongoose schema for Book 
-model
-├── routes/
-│   └── bookRoutes.js        
-# Express routes for book 
-API endpoints
-├── tests/
-│   ├── Apis/
-│   │   └── bookApi.test.js  
-# API tests with isolated 
-components
-│   ├── integration/
-│   │   └── bookApi.test.js  
-# Integration tests with 
-database
-│   └── unit/
-│       └── bookController.
-test.js # Unit tests for 
-controller functions
-├── .env                     
-# Environment variables
-├── server.js                
-# Express server setup
-├── jest.config.js           
-# Jest configuration
-└── package.json             
-# Project dependencies
+├── controllers/                 # Controller logic for book operations
+│   └── bookController.js
+├── models/                     # Mongoose schema definitions
+│   └── Book.js
+├── routes/                     # Express API route definitions
+│   └── bookRoutes.js
+├── tests/                      # Test suites
+│   ├── Apis/                   # API tests using mocks/stubs
+│   │   └── bookApi.test.js
+│   ├── integration/            # Tests involving actual DB connections
+│   │   └── bookApi.test.js
+│   └── unit/                   # Unit tests for isolated controller functions
+│       └── bookController.test.js
+├── .env                        # Environment variables (ignored by Git)
+├── server.js                   # Main entry point, Express server setup
+├── jest.config.js              # Jest testing configuration
+└── package.json                # Project metadata and dependencies
+
 ```
 
 ##📡 API Endpoints
