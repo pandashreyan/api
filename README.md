@@ -1,6 +1,5 @@
 # 📚 Book API
-
-A RESTful API for managing books using Node.js, Express, and MongoDB
+This is a RESTful API for managing books, built with Node.js, Express, and MongoDB. The API provides endpoints for creating, reading, updating, and deleting book records.
 
 ## 🚀 Features
 - CRUD operations for books
@@ -95,60 +94,6 @@ Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Delete
 ```
 🧰 Technologies Used:
 
-### Backend
-```
-- Node.js - JavaScript runtime environment
-- Express.js - Web application framework
-- MongoDB - NoSQL database
-- Mongoose - MongoDB object modeling tool
-```
-### Testing
-```
-- Jest - JavaScript testing framework
-- Supertest - HTTP assertions library for testing API endpoints
-- MongoDB Memory Server - In-memory MongoDB server for testing
-```
-
-📁 Project Structure
-```bash
-api/
-├── controllers/
-│   └── bookController.js    # Controller functions for book operations
-├── models/
-│   └── Book.js              # Mongoose schema for Book model
-├── routes/
-│   └── bookRoutes.js        # Express routes for book API endpoints
-├── tests/
-│   ├── Apis/
-│   │   └── bookApi.test.js  # API tests with isolated components
-│   ├── integration/
-│   │   └── bookApi.test.js  # Integration tests with database
-│   └── unit/
-│       └── bookController.test.js # Unit tests for controller functions
-├── .env                     # Environment variables
-├── server.js                # Express server setup
-├── jest.config.js           # Jest configuration
-└── package.json             # Project dependencies
-```
- Trae
-
-I need to create a clear README.md file that focuses on the API integration, tech stack, running instructions, and testing frameworks used in this project.
-
-package.json :( 1 - 50 )
-
-Now I need to check the server.js file to understand how the API is set up.
-
-server.js :( 1 - 50 )
-
-Let me check the jest.config.js file to understand the testing configuration.
-
-jest.config.js :( 1 - 20 )
-
-# Book API
-## Overview
-This is a RESTful API for managing books, built with Node.js, Express, and MongoDB. The API provides endpoints for creating, reading, updating, and deleting book records.
-
-## Tech Stack
 
 ### 🖥 Backend
 - Node.js - JavaScript runtime environment
@@ -159,11 +104,9 @@ This is a RESTful API for managing books, built with Node.js, Express, and Mongo
 - Jest - JavaScript testing framework
 - Supertest - HTTP assertions library for testing API endpoints
 - MongoDB Memory Server - In-memory MongoDB server for testing
-## API Endpoints
-Method Endpoint Description POST /api/books Create a new book GET /api/books Get all books GET /api/books/:id Get a book by ID PUT /api/books/:id Update a book by ID DELETE /api/books/:id Delete a book by ID
 
-## Project Structure
-```
+📁 Project Structure
+```bash
 api/
 ├── controllers/
 │   └── bookController.js    
@@ -199,6 +142,17 @@ controller functions
 └── package.json             
 # Project dependencies
 ```
+
+##📡 API Endpoints
+
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| POST   | `/api/books`     | Create a new book   |
+| GET    | `/api/books`     | Get all books       |
+| GET    | `/api/books/:id` | Get a book by ID    |
+| PUT    | `/api/books/:id` | Update a book by ID |
+| DELETE | `/api/books/:id` | Delete a book by ID |
+
 ## Setup and Installation
 1. Clone the repository
 2. Install dependencies:
