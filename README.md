@@ -94,30 +94,164 @@ $id = "REPLACE_WITH_BOOK_ID"
 Invoke-RestMethod -Uri "http://localhost:3000/api/books/$id" -Method Delete
 ```
 🧰 Technologies Used:
+
+### Backend
 ```
-Node.js – JavaScript runtime
-Express.js – Lightweight web framework
-MongoDB – NoSQL database
-Mongoose – ODM for MongoDB
-dotenv – Load environment variables from .env
+- Node.js - JavaScript runtime environment
+- Express.js - Web application framework
+- MongoDB - NoSQL database
+- Mongoose - MongoDB object modeling tool
+```
+### Testing
+```
+- Jest - JavaScript testing framework
+- Supertest - HTTP assertions library for testing API endpoints
+- MongoDB Memory Server - In-memory MongoDB server for testing
 ```
 
 📁 Project Structure
 ```bash
-
-book-api/
-│
+api/
+├── controllers/
+│   └── bookController.js    # Controller functions for book operations
 ├── models/
-│   └── Book.js           # Mongoose schema
-│
+│   └── Book.js              # Mongoose schema for Book model
 ├── routes/
-│   └── bookRoutes.js     # Express routes for books
-│
-├── .env                  # Environment variables (ignored in git)
-├── server.js             # Entry point of the application
-├── package.json          # Project metadata & dependencies
-└── README.md             # Project documentation
+│   └── bookRoutes.js        # Express routes for book API endpoints
+├── tests/
+│   ├── Apis/
+│   │   └── bookApi.test.js  # API tests with isolated components
+│   ├── integration/
+│   │   └── bookApi.test.js  # Integration tests with database
+│   └── unit/
+│       └── bookController.test.js # Unit tests for controller functions
+├── .env                     # Environment variables
+├── server.js                # Express server setup
+├── jest.config.js           # Jest configuration
+└── package.json             # Project dependencies
 ```
+ Trae
+
+I need to create a clear README.md file that focuses on the API integration, tech stack, running instructions, and testing frameworks used in this project.
+
+package.json :( 1 - 50 )
+
+Now I need to check the server.js file to understand how the API is set up.
+
+server.js :( 1 - 50 )
+
+Let me check the jest.config.js file to understand the testing configuration.
+
+jest.config.js :( 1 - 20 )
+
+# Book API
+## Overview
+This is a RESTful API for managing books, built with Node.js, Express, and MongoDB. The API provides endpoints for creating, reading, updating, and deleting book records.
+
+## Tech Stack
+### Backend
+- Node.js - JavaScript runtime environment
+- Express.js - Web application framework
+- MongoDB - NoSQL database
+- Mongoose - MongoDB object modeling tool
+### Testing
+- Jest - JavaScript testing framework
+- Supertest - HTTP assertions library for testing API endpoints
+- MongoDB Memory Server - In-memory MongoDB server for testing
+## API Endpoints
+Method Endpoint Description POST /api/books Create a new book GET /api/books Get all books GET /api/books/:id Get a book by ID PUT /api/books/:id Update a book by ID DELETE /api/books/:id Delete a book by ID
+
+## Project Structure
+```
+api/
+├── controllers/
+│   └── bookController.js    
+# Controller functions for 
+book operations
+├── models/
+│   └── Book.js              
+# Mongoose schema for Book 
+model
+├── routes/
+│   └── bookRoutes.js        
+# Express routes for book 
+API endpoints
+├── tests/
+│   ├── Apis/
+│   │   └── bookApi.test.js  
+# API tests with isolated 
+components
+│   ├── integration/
+│   │   └── bookApi.test.js  
+# Integration tests with 
+database
+│   └── unit/
+│       └── bookController.
+test.js # Unit tests for 
+controller functions
+├── .env                     
+# Environment variables
+├── server.js                
+# Express server setup
+├── jest.config.js           
+# Jest configuration
+└── package.json             
+# Project dependencies
+```
+## Setup and Installation
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a .env file in the root directory with the following variables:
+   ```
+   MONGODB_URI=mongodb://
+   localhost:27017/bookdb
+   PORT=3000
+   ``` Note: Replace with your MongoDB connection string if using MongoDB Atlas.
+## Running the Application
+Start the server:
+
+```
+npm start
+```
+The API will be available at http://localhost:3000 .
+
+## Running Tests
+Run all tests with coverage report:
+
+```
+npm test
+```
+### Testing Strategy
+The project implements a comprehensive testing approach:
+
+1. Unit Tests : Test individual controller functions in isolation
+2. Integration Tests : Test API endpoints with actual database interactions
+3. API Tests : Test API endpoints with isolated components using mocks
+## Test Coverage
+The project has excellent test coverage:
+<img width="418" alt="image" src="https://github.com/user-attachments/assets/e77d68b6-fd02-4e81-ad8b-3c34268f7206" />
+
+- 100% of branches and functions are covered
+- 87.23% of lines are covered
+- 88% of statements are covered
+The only uncovered lines are in the controller (lines 8, 30-31, 41, 51, 61), which are likely error handling or edge cases.
+
+## Book Model
+The Book model includes the following fields:
+
+- title (String, required)
+- author (String, required)
+- publishedYear (Number, required)
+## Development
+This project uses the following development tools:
+
+- Jest for testing
+- Supertest for API testing
+- MongoDB Memory Server for in-memory database testing
+  
 🔒 Security Note
 Make sure to add sensitive files to your .gitignore:
 
