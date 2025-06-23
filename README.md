@@ -192,6 +192,8 @@ The project has excellent test coverage:
 <img width="663" alt="image" src="https://github.com/user-attachments/assets/366333ee-b923-4458-a062-7d52d6a40407" />
 
 
+
+
 - 100% of branches and functions are covered
 - 87.23% of lines are covered
 - 88% of statements are covered
