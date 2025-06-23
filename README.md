@@ -189,7 +189,7 @@ The project implements a comprehensive testing approach:
 
 ## Test Coverage
 The project has excellent test coverage:
-<img width="683" alt="image" src="https://github.com/user-attachments/assets/366333ee-b923-4458-a062-7d52d6a40407" />
+<img src="https://github.com/user-attachments/assets/366333ee-b923-4458-a062-7d52d6a40407" alt="Test Coverage" style="width:100%; max-width:900px;" />
 
 
 
