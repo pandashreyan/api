@@ -193,11 +193,10 @@ The project has excellent test coverage:
 
 
 
-
 - 100% of branches and functions are covered
 - 87.23% of lines are covered
 - 88% of statements are covered
-The only uncovered lines are in the controller (lines 8, 30-31, 41, 51, 61), which are likely error handling or edge cases.
+- The only uncovered lines are in the controller (lines 8, 30-31, 41, 51, 61), which are likely error handling or edge cases.
 
 ## Book Model
 The Book model includes the following fields:
