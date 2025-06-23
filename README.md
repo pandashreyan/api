@@ -149,12 +149,13 @@ jest.config.js :( 1 - 20 )
 This is a RESTful API for managing books, built with Node.js, Express, and MongoDB. The API provides endpoints for creating, reading, updating, and deleting book records.
 
 ## Tech Stack
-### Backend
+
+### 🖥 Backend
 - Node.js - JavaScript runtime environment
 - Express.js - Web application framework
 - MongoDB - NoSQL database
 - Mongoose - MongoDB object modeling tool
-### Testing
+### ✅ Testing
 - Jest - JavaScript testing framework
 - Supertest - HTTP assertions library for testing API endpoints
 - MongoDB Memory Server - In-memory MongoDB server for testing
@@ -227,12 +228,15 @@ npm test
 ### Testing Strategy
 The project implements a comprehensive testing approach:
 
-1. Unit Tests : Test individual controller functions in isolation
-2. Integration Tests : Test API endpoints with actual database interactions
-3. API Tests : Test API endpoints with isolated components using mocks
+🔹 Unit tests: Validate controller logic in isolation
+🔸 Integration tests: Verify real DB interactions
+🟢 API tests: Mocked endpoints with expected responses
+
+
 ## Test Coverage
 The project has excellent test coverage:
-<img width="418" alt="image" src="https://github.com/user-attachments/assets/e77d68b6-fd02-4e81-ad8b-3c34268f7206" />
+<img width="663" alt="image" src="https://github.com/user-attachments/assets/366333ee-b923-4458-a062-7d52d6a40407" />
+
 
 - 100% of branches and functions are covered
 - 87.23% of lines are covered
@@ -241,10 +245,13 @@ The only uncovered lines are in the controller (lines 8, 30-31, 41, 51, 61), whi
 
 ## Book Model
 The Book model includes the following fields:
-
-- title (String, required)
-- author (String, required)
-- publishedYear (Number, required)
+```
+  {
+  title: String,        // required
+  author: String,       // required
+  publishedYear: Number // required
+}
+```
 ## Development
 This project uses the following development tools:
 
