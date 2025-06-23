@@ -128,7 +128,7 @@ api/
 
 ```
 
-##📡 API Endpoints
+📡 API Endpoints
 
 | Method | Endpoint         | Description         |
 | ------ | ---------------- | ------------------- |
@@ -149,7 +149,8 @@ api/
    MONGODB_URI=mongodb://
    localhost:27017/bookdb
    PORT=3000
-   ``` Note: Replace with your MongoDB connection string if using MongoDB Atlas.
+   ```
+   Note: Replace with your MongoDB connection string if using MongoDB Atlas.
 ## Running the Application
 Start the server:
 
