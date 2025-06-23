@@ -129,21 +129,6 @@ api/
 
 ```
 
-
-
-## Setup and Installation
-1. Clone the repository
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Create a .env file in the root directory with the following variables:
-   ```
-   MONGODB_URI=mongodb://
-   localhost:27017/bookdb
-   PORT=3000
-   ```
-   Note: Replace with your MongoDB connection string if using MongoDB Atlas.
 ## Running the Application
 Start the server:
 
@@ -161,9 +146,9 @@ npm test
 ### Testing Strategy
 The project implements a comprehensive testing approach:
 
-🔹 Unit tests: Validate controller logic in isolation
-🔸 Integration tests: Verify real DB interactions
-🟢 API tests: Mocked endpoints with expected responses
+-🔹 Unit tests: Validate controller logic in isolation
+-🔸 Integration tests: Verify real DB interactions
+-🟢 API tests: Mocked endpoints with expected responses
 
 
 ## Test Coverage
