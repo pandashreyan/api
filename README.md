@@ -146,9 +146,10 @@ npm test
 ### Testing Strategy
 The project implements a comprehensive testing approach:
 
--🔹 Unit tests: Validate controller logic in isolation
--🔸 Integration tests: Verify real DB interactions
--🟢 API tests: Mocked endpoints with expected responses
+
+- Unit tests: Validate controller logic in isolation
+- Integration tests: Verify real DB interactions
+- API tests: Mocked endpoints with expected responses
 
 
 ## Test Coverage
